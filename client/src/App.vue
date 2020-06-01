@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <div id="heading">
-            <h1> Covid Hygienenet</h1>
+            <p> Covid Hygienenet</p>
         </div>
         <div id="description">
             The virus is spread at an alarming rate without the knowledge of the infected person. Covid-19 spreads when infected person coughs, sneezes or talks and droplets from their mouth or nose are launched into air and land in the “T Zone(Eyes, Nose, Mouth)” of people nearby. Therefore, wearing Mask is necessary step to be taken for safety of humanity as masks are the safety shield from the transfer of droplets. The usage of masks is the best and most effective method to stop the transfer of virus directly safeguarding self and others.
@@ -31,7 +31,6 @@ export default {
 
 body,
 html {
-    padding: 10px;
     margin: 0;
     background: #56CCF2;
     /* fallback for old browsers */
@@ -49,6 +48,15 @@ h1 {
     text-align: center;
 }
 
+
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .3);
+}
+
 #app {
     display: flex;
     flex-direction: column;
@@ -58,12 +66,20 @@ h1 {
     color: #ffffff;
 }
 
-#wrapper {
-    margin-top: 30px;
-    flex-direction: column;
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .3);
-    width: 95%;
+#description {
+    margin: 20px;
+    line-height: 1.8;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #app {
+        width: 100%;
+    }
+    #wrapper{
     display: flex;
-    padding-bottom: 30px;
+    flex-direction: column;
+
+    }
 }
 </style>
