@@ -234,7 +234,7 @@ export default {
 }
 
 video {
-    border: solid 4px black;
+    border: solid 4px white;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -263,6 +263,7 @@ video {
     flex-direction: column;
     height: 500px;
     align-items: center;
+    margin:10px;
 }
 
 #deviceOptions {
@@ -344,7 +345,7 @@ video {
     text-align: center;
     margin: 3px;
     font-size: 30px;
-    color: red;
+    color: orange;
     font-weight: bolder;
 }
 
@@ -363,7 +364,6 @@ video {
 
 @media only screen and (max-width: 767px) {
     #mobile-images {
-        margin: 20px;
         display: flex;
 
     }
