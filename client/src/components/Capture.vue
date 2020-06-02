@@ -234,11 +234,15 @@ export default {
 }
 
 video {
-    border: solid 1px white;
-    transform: rotateY(180deg);
+    border: solid 4px black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+    /*transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     /* Safari and Chrome */
-    -moz-transform: rotateY(180deg);
+    /*-moz-transform: rotateY(180deg);*/
     /* Firefox */
 
 }
@@ -257,7 +261,7 @@ video {
 #videoPane {
     display: flex;
     flex-direction: column;
-    height: 275px;
+    height: 500px;
     align-items: center;
 }
 
