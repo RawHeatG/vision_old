@@ -4,7 +4,7 @@
             <div id="videoPane">
                 <video id="video" width="320" height="240" autoplay></video>
                 <div id="deviceOptions">
-                    <select name="deviceSelection" @input="setDevice">
+                    <select id="Cam_btn" name="deviceSelection" @input="setDevice" >
                         <option :key="idx" v-for="(ditem, idx) in devices" value="ditem.deviceId">{{ditem.label}}</option>
                     </select>
                 </div>
@@ -44,6 +44,8 @@
 <script>
 import axios from 'axios'
 import * as cvstfjs from 'customvision-tfjs'
+import Vue from 'vue'
+import VueProgress from 'vue-progress-path'
 
 export default {
     name: 'Capture',
@@ -250,18 +252,17 @@ export default {
 #output {
     height: 240px;
     width: 320px;
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     clear: right;
     text-align: left;
-    padding: 0px 4px;
+    padding: 0px 4px 50px 4px;
 }
 
 #videoPane {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 450px;
     align-items: center;
     margin:10px;
 }
@@ -298,6 +299,13 @@ export default {
     padding: 25px 100px;
     text-align: center;
     margin: 0px;
+}
+#Cam_btn {
+    background: #fddcd7;
+    color: #5987aa;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 #radioselection {
@@ -370,8 +378,20 @@ export default {
 
     #images {
         display: flex;
+        align-items: center;    
         flex-direction: column;
     }
+
+    #images {
+        width: 100%;
+
+    }
+
+
+    #videoPane {
+        width: 100%;
+    }
+
     #video{
         width: 80%;
     }

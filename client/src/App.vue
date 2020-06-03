@@ -1,16 +1,19 @@
 <template>
     <div id="app">
         <div id="heading">
-            <h1>Hygienenet</h1>
+            <h1>HygieneNet</h1>
         </div>
         <div id="description">
            <h3><b>The</b> whole package to help you perform <u>The Impeccable Hand Wash</u> Each time, Everytime!</h3>
         </div>
         <div id="wrapper">
         	<div id="image">
-                <img src="./img/HandWash.gif" style="float:center">
+                <img src="./img/HandWash.gif">
             </div>
-            <h1> Hygienenet</h1>
+            <h2 id="emoji"> 
+           		Wanna lend us your hand <span>🤝🏻</span>for a while!
+           	<br>
+           		We won't bite <span>&#128540;</span></h2>
             <Capture />
         </div>
     </div>
@@ -35,7 +38,7 @@ export default {
 body,
 html {
     margin: 0;
-    background: ##5987aa;
+    background: #5987aa;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #5987aa, #fddcd7);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -58,6 +61,10 @@ h1 {
     justify-content: center;
     font-size: 23px;
     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .3);
+}
+
+#emoji span {
+	font-size: 1.7em;
 }
 
 #app {
@@ -103,10 +110,14 @@ h1 {
     	display: flex;
     	flex-direction: column;
     	align-items: center;
-
     }
+
+    h2{
+    	text-align: center;
+    }
+
     #image img {
-    	width: 80%;
+    	width: 90%;
     	border-radius: 8px;
     }
 
