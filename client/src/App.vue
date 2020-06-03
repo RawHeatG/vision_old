@@ -7,6 +7,9 @@
            <h3><b>The</b> whole package to help you perform <u>The Impeccable Hand Wash</u> Each time, Everytime!</h3>
         </div>
         <div id="wrapper">
+        	<div id="image">
+                <img src="./img/HandWash.gif" style="float:center">
+            </div>
             <h1> Hygienenet</h1>
             <Capture />
         </div>
@@ -27,16 +30,16 @@ export default {
 <style lang="css">
 </style>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
 
 body,
 html {
     margin: 0;
-    background: #56CCF2;
+    background: ##5987aa;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);
+    background: -webkit-linear-gradient(to bottom, #5987aa, #fddcd7);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    background: linear-gradient(to bottom, #5987aa, #fddcd7);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,8 +71,28 @@ h1 {
 
 #description {
     margin: 20px;
+    text-align: center;
     line-height: 1.8;
 }
+/*img {
+		display: flex;
+    	margin-left: auto;
+  		margin-right: auto;
+		width: 80%;
+  		height: auto;
+  		border-radius: 18px;
+}*/
+#image{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#image img {
+    	border-radius: 18px;	
+		width: 70%;
+  		height: auto;
+	}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -77,9 +100,16 @@ h1 {
         width: 100%;
     }
     #wrapper{
-    display: flex;
-    flex-direction: column;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
 
     }
+    #image img {
+    	width: 80%;
+    	border-radius: 8px;
+    }
+
+    
 }
 </style>

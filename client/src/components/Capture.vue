@@ -233,8 +233,8 @@ export default {
     text-align: left;
 }
 
-video {
-    border: solid 4px white;
+#video {
+    border: solid 4px #5987aa;
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -345,7 +345,7 @@ video {
     text-align: center;
     margin: 3px;
     font-size: 30px;
-    color: orange;
+    color: #486f8c;
     font-weight: bolder;
 }
 
@@ -371,6 +371,9 @@ video {
     #images {
         display: flex;
         flex-direction: column;
+    }
+    #video{
+        width: 80%;
     }
 
 }
