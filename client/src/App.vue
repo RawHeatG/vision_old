@@ -91,6 +91,14 @@ h1 {
   		height: auto;
   		border-radius: 18px;
 }*/
+
+#wrapper {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	color:#5987aa;
+}
+
 #image{
 	display: flex;
 	align-items: center;
