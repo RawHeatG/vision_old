@@ -60,6 +60,7 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 23px;
+    color: #ffe6e2;
     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .3);
 }
 
@@ -80,6 +81,7 @@ h1 {
     margin: 20px;
     text-align: center;
     line-height: 1.8;
+    color: #fff2f0;
 }
 /*img {
 		display: flex;
